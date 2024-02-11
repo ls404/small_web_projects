@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "c420dcd06fa34dc4af0a34efc79f56c5";
 
 function displayRecipes(recipes) {
   const recipeList = document.querySelector(".recipe-list");
