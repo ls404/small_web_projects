@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        perspective: 1000px;
+      }
+      .container img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+      }
+      #image1 {
+        transition: all 1s;
+        filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.1));
+      }
+
+      #image1:hover {
+        transform: translateY(-300px);
+      }
+      #image2 {
+        transition: all 1s;
+      }
+      #image2:hover {
+        transform: scale(0, 1.5);
+      }
+      #image3 {
+        transition: all 1s ease-in-out;
+      }
+      #image3:hover {
+        transform: rotate(360deg) scale(0.1);
+      }
+      #image4 {
+        transition: all 0.2s;
+      }
+      #image4:hover {
+        transform: skew(-30deg, -40deg) translateY(-200px);
+      }
+      #image5 {
+        transition: all 1s;
+        transform-origin: top right;
+      }
+      #image5:hover {
+        transform: rotate(-360deg);
+      }
+      #image6 {
+        transition: all 1s;
+        transform-origin: bottom left;
+      }
+      #image6:hover {
+        transform: rotateX(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        id="image1"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/626f7f20-56da-4a6c-9996-50364c8b9ae2/d7195pa-904b2b3c-bf73-411f-803d-63c533d74591.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYyNmY3ZjIwLTU2ZGEtNGE2Yy05OTk2LTUwMzY0YzhiOWFlMlwvZDcxOTVwYS05MDRiMmIzYy1iZjczLTQxMWYtODAzZC02M2M1MzNkNzQ1OTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LCfQu9lEFEamrz26UlbX_fI4b3tEcMkwXfkCM_dxQi0"
+        alt="image 1"
+      />
+      <img id="image2" src="https://picsum.photos/200/200" alt="image 2" />
+      <img id="image3" src="https://picsum.photos/200/200" alt="image 3" />
+      <img id="image4" src="https://picsum.photos/200/200" alt="image 4" />
+      <img id="image5" src="https://picsum.photos/200/200" alt="image 5" />
+      <img
+        id="image6"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/626f7f20-56da-4a6c-9996-50364c8b9ae2/d7195pa-904b2b3c-bf73-411f-803d-63c533d74591.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYyNmY3ZjIwLTU2ZGEtNGE2Yy05OTk2LTUwMzY0YzhiOWFlMlwvZDcxOTVwYS05MDRiMmIzYy1iZjczLTQxMWYtODAzZC02M2M1MzNkNzQ1OTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LCfQu9lEFEamrz26UlbX_fI4b3tEcMkwXfkCM_dxQi0"
+        alt="image 1"
+      />
+    </div>
+  </body>
+</html>
